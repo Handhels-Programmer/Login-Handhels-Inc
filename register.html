@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="DO">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <div class="login-container">
         <h2>Crear una Cuenta</h2>
@@ -20,15 +22,9 @@
             </div>
             <button type="submit" class="btn">Registrarse</button>
         </form>
-
-        <!-- Mostrar mensaje de error si el usuario ya existe -->
-        <php 
-        if (isset($_GET['error']) && $_GET['error'] == 'exists') {
-            echo "<p class='error-message'>El nombre de usuario ya está registrado.</p>";
-        }
-        >
-        
+        <br>
         <p class="login-link">¿Ya tienes una cuenta? <a href="index.html">Inicia sesión aquí</a></p>
     </div>
 </body>
+
 </html>
